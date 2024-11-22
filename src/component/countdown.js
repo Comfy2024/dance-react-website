@@ -1,8 +1,4 @@
 
-import Image from 'next/image';
-
-
-
 const countdown = () => {
     return (
 
@@ -53,7 +49,7 @@ const countdown = () => {
                 </div>
             </section>
 
-            <Image />
+
         </>
     )
 }

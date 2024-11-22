@@ -1,4 +1,8 @@
-import Image from 'next/image';
+import AliceCarousel from 'react-alice-carousel';
+import "react-alice-carousel/lib/alice-carousel.css";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faPhoneVolume } from '@fortawesome/free-solid-svg-icons';
+import { faMoonMoon } from '@fortawesome/free-solid-svg-icons';
 
 const Home = () => {
 
@@ -7,17 +11,21 @@ return (
 <>
 
  {/* Header */}
- <div className="owl-carousel">
+  <AliceCarousel autoPlay infinite
+  autoPlayInterval="3000"
+  disableDotsControls disableButtonsControls className="owl-carousel">
     <div className="bg1" />
     <div className="bg2" />
     <div className="bg3" />
-  </div>
+  </AliceCarousel>
+
+
 <div className="main-pic">
   <div>
     <header>
       <div className="logo">
         <img
-          src="/logo.png"
+          src="logo.png"
           alt="Dance Logo"
           width="50px"
           className="logo-img"
@@ -42,21 +50,21 @@ return (
               </li>
             </ul>
             <i
-              className="fa fa-window-close"
+               className="fa fa-window-close"
               id="close"
               onclick="closemenu()"
             />
           </div>
         </nav>
         <div className="toggleswitch">
-          <i className="fa-solid fa-moon moon" />
+          <FontAwesomeIcon icon={faMoonMoon} className="fa-solid fa-moon moon" />
           <button onclick="togglemode()" className="toggle">
             <i className="fa-solid fa-toggle-on toggleon" id="toggle" />
           </button>
           <i className="fa-solid fa-sun sun" />
         </div>
         <a href="#" className="call">
-          <i className="fa-solid fa-phone-volume" />
+          <FontAwesomeIcon icon={faPhoneVolume} className="fa-solid fa-phone-volume" />
         </a>
         <i className="fa-solid fa-bars" id="bar" onclick="openmenu()" />
       </div>
@@ -81,7 +89,7 @@ return (
     </div>
     <img
       id="shapeTop"
-      src="./shape-top-white-80.png"
+      src="shape-top-white-80.png"
       alt="shapeTop"
       width="100%"
     />

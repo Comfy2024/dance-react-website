@@ -1,4 +1,4 @@
-// import { React } from 'react';
+
 import Head from 'next/head';
 import Home from '@/component/header';
 import Countdown from '@/component/countdown';
