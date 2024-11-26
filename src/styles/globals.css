@@ -176,6 +176,7 @@ li>a {
 
 .toggle {
   background-color: transparent;
+  font-size: 25px;
 }
 
 .toggle>i {

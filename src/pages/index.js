@@ -10,14 +10,16 @@ import Footer from '@/component/footer';
 
 
 
+
+
 const OneDance = () => {
 
 return (
 <div>
 <Head>
-<meta charset="utf-8" />
+<meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" /> 
-
+<title>Dance contest</title>
   </Head>
   <Home />
   <Countdown />
@@ -28,8 +30,7 @@ return (
 </div>
 
 
-)
-}
+)}
 
 export default OneDance;
 
