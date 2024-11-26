@@ -19,7 +19,7 @@ body {
 
 .bg1 {
   z-index: 8;
-  background-image: url(/1.JPG);
+  background-image: url(../../public/1.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
